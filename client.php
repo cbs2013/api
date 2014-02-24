@@ -8,7 +8,7 @@ if (isset($_GET["action"]) && isset($_GET["id"]) && $_GET["action"] == "get_user
   $user_info = file_get_contents('http://localhost/test/api.php?action=get_user&id=' . $_GET["id"]);
   $user_info = json_decode($user_info, true);
 
-  // THAT IS VERY QUICK AND DIRTY !!!!!?
+  // THAT IS VERY QUICK AND DIRTY !!!!!???
   ?>
     <table>
       <tr>
